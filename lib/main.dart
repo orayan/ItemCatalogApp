@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:item_catalog_app/views/splash.dart';
 
 void main() {
   runApp(const MyItemCatalogApp());
@@ -10,6 +11,10 @@ class MyItemCatalogApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Flutter Demo', theme: ThemeData());
+    return const MaterialApp(
+      title: 'Item Catalog App',
+      debugShowCheckedModeBanner: false,
+      home: PageSplash(),
+    );
   }
 }
