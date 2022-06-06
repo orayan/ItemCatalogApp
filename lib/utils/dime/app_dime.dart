@@ -13,11 +13,17 @@ class AppDime {
 
   static double xxlg = xlg * base; // 64.0
 
-  static double onehandre1 = (xlg * base) * one_41; // 90
-  static double onehandre = (xlg * base) * one_6; // 102.4
+  static double xxlg_8 = (xxlg * base) * one_25; // 80
+  static double xxlg_9 = (xxlg * base) * one_41; // 90
+  static double xxlg_1 = (xxlg * base) * one_57; // 100
 
   static double xxxlg = xxlg * base; // 128.0
 
+  static double one_25 = 1.25;
   static double one_41 = 1.41;
-  static double one_6 = 1.6;
+  static double one_57 = 1.57;
+
+  static double half = 0.5;
+  static double quarter = 0.25;
+  static double fullScreen = 1;
 }
