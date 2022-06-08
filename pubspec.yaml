@@ -16,7 +16,9 @@ dependencies:
   # fonst
   google_fonts: ^3.0.1
   # adapting screen and font size.Let your UI display a reasonable layout on different screen sizes!
-  flutter_screenutil: ^5.5.3+2  
+  flutter_screenutil: ^5.5.3+2
+    # language
+  easy_localization: ^3.0.1  
 
 dev_dependencies:
   flutter_test:
@@ -30,3 +32,4 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
+    - assets/lang/
