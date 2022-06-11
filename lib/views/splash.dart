@@ -1,11 +1,4 @@
-import 'dart:async';
-
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:item_catalog_app/utils/constant/app_images.dart';
-import 'package:item_catalog_app/utils/dime/app_dime.dart';
-
-import 'home.dart';
+part of '../utils/imports/app_imports.dart';
 
 class PageSplash extends StatefulWidget {
   const PageSplash({Key? key}) : super(key: key);
@@ -24,13 +17,13 @@ class _PageSplashState extends State<PageSplash> {
       );
       Navigator.pushReplacement(context, route);
     });
-    print('initState ');
+    dev.log('initState', name: 'PageSplash');
   }
 
   @override
   void dispose() {
     super.dispose();
-    print('dispose');
+    dev.log('dispose', name: 'PageSplash');
   }
 
   @override
@@ -46,7 +39,7 @@ class _PageSplashState extends State<PageSplash> {
               width: AppDime.half.sw,
             ),
             AppDime.lg.verticalSpace,
-            Text("Item Catalog App")
+            Text(AppLangKey.appName).tr()
           ],
         ),
       ),

@@ -1,6 +1,4 @@
-import 'package:easy_localization/easy_localization.dart';
-import 'package:flutter/material.dart';
-import 'package:item_catalog_app/utils/language/config.dart';
+part of '../imports/app_imports.dart';
 
 class AppLang {
   // * current lang
@@ -12,6 +10,7 @@ class AppLang {
       context.locale == AppLangConfig.arLocale;
 
   // * set locale
+  // TODO : refactor Future
   static void setLang(BuildContext context, Locale locale) async =>
       await context.setLocale(locale);
 }

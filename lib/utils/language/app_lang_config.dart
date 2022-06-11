@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+part of '../imports/app_imports.dart';
 
 class AppLangConfig {
   // code lang
