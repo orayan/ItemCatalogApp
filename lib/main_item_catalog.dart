@@ -15,7 +15,9 @@ class MyItemCatalogApp extends StatelessWidget {
             localizationsDelegates: context.localizationDelegates,
             supportedLocales: context.supportedLocales,
             locale: context.locale,
-            home: const PageSplash(),
+            // * (/) -> root
+            initialRoute: "/",
+            routes: AppRoutes.route,
           );
         });
   }
