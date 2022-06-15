@@ -10,13 +10,14 @@ class MyItemCatalogApp extends StatelessWidget {
         designSize: const Size(360, 690),
         builder: (context, child) {
           return MaterialApp(
-            title: 'Item Catalog App',
+            title: AppLangKey.appName,
             debugShowCheckedModeBanner: false,
             localizationsDelegates: context.localizationDelegates,
             supportedLocales: context.supportedLocales,
             locale: context.locale,
             // * (/) -> root
-            initialRoute: "/",
+            // initialRoute: "/",
+            initialRoute: PageSplash.routeName,
             routes: AppRoutes.route,
           );
         });

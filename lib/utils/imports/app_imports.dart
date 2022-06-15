@@ -13,6 +13,7 @@ import 'dart:developer' as dev;
 part '../language/app_lang.dart';
 part '../language/app_lang_config.dart';
 part '../routes/app_routes.dart';
+part '../theme/app_colors.dart';
 
 // * Views
 part '../../views/splash.dart';

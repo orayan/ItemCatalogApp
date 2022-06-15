@@ -1,11 +1,13 @@
 part of '../utils/imports/app_imports.dart';
 
 class PageHome extends StatelessWidget {
+  static const routeName = 'home';
   const PageHome({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.bgWhite,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
