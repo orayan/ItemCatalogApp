@@ -7,16 +7,12 @@ class PageHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-<<<<<<< HEAD
       appBar: AppBar(
           backgroundColor: Colors.green,
           title: Text(
             'app store',
             style: AppTheme.h4(context),
           )),
-=======
-      backgroundColor: AppColors.bgWhite,
->>>>>>> 722e2e822d17118eff6a7b58789e69b3bc0b25c1
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
