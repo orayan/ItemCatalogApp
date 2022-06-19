@@ -1,6 +1,7 @@
 part of '../utils/imports/app_imports.dart';
 
 class PageSplash extends StatefulWidget {
+  static const routeName = 'PageSplash';
   const PageSplash({Key? key}) : super(key: key);
 
   @override
@@ -12,18 +13,17 @@ class _PageSplashState extends State<PageSplash> {
   void initState() {
     super.initState();
     Timer(const Duration(seconds: 5), () {
-      MaterialPageRoute<PageHome> route = MaterialPageRoute(
-        builder: (context) => const PageHome(),
-      );
-      Navigator.pushReplacement(context, route);
+      // Navigator.pushNamed(context, '/home');
+      // Navigator.pushNamedAndRemoveUntil(context, '/home', (route) => false);
+      Navigator.pushReplacementNamed(context, PageHome.routeName);
     });
-    dev.log('initState', name: 'PageSplash');
+    dev.log('initState', name: PageSplash.routeName);
   }
 
   @override
   void dispose() {
     super.dispose();
-    dev.log('dispose', name: 'PageSplash');
+    dev.log('dispose', name: PageSplash.routeName);
   }
 
   @override

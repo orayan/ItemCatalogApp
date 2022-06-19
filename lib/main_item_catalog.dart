@@ -10,7 +10,7 @@ class MyItemCatalogApp extends StatelessWidget {
         designSize: const Size(360, 690),
         builder: (context, child) {
           return MaterialApp(
-            title: 'Item Catalog App',
+            title: AppLangKey.appName,
             debugShowCheckedModeBanner: false,
             // * lang
             localizationsDelegates: context.localizationDelegates,
@@ -21,7 +21,8 @@ class MyItemCatalogApp extends StatelessWidget {
             darkTheme: AppThemeChoose.darkTheme(context),
             // themeMode: ThemeMode.dark,
             // * (/) -> root
-            initialRoute: "/",
+            // initialRoute: "/",
+            initialRoute: PageSplash.routeName,
             routes: AppRoutes.route,
           );
         });
