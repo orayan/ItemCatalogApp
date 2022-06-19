@@ -12,9 +12,14 @@ class MyItemCatalogApp extends StatelessWidget {
           return MaterialApp(
             title: 'Item Catalog App',
             debugShowCheckedModeBanner: false,
+            // * lang
             localizationsDelegates: context.localizationDelegates,
             supportedLocales: context.supportedLocales,
             locale: context.locale,
+            // * theme
+            theme: AppThemeChoose.lightTheme(context),
+            darkTheme: AppThemeChoose.darkTheme(context),
+            // themeMode: ThemeMode.dark,
             // * (/) -> root
             initialRoute: "/",
             routes: AppRoutes.route,
