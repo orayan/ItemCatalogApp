@@ -1,4 +1,4 @@
-part of '../utils/imports/app_imports.dart';
+part of '../../utils/imports/app_imports.dart';
 
 class PageHome extends StatelessWidget {
   static const routeName = 'home';
@@ -7,16 +7,13 @@ class PageHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-          backgroundColor: Colors.green,
-          title: Text(
-            'app store',
-            style: AppTheme.h4(context),
-          )),
+      appBar: const AppBarHome(),
+      drawer: const DrawerBody(),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          AppSvg.myApp,
           Text(AppLangKey.appName).tr(),
           Row(
             children: [

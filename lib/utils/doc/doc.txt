@@ -1,0 +1,56 @@
+title :
+- Android ✅
+- IOS ❌
+- affected  manage App & screenShot & background app
+
+onGenerateTitle :
+- Android ✅
+- IOS ❌
+- affected  manage App & screenShot & background app 
+- support language 
+
+IOS how apply language ?
+1- open folder ios in xCode
+2- add language Arabic  because English default 
+3- add new file 
+4- choose type string file 
+5- name file InfoPlist 
+6- add localization Arabic and English
+7- add key CFBundleName & CFBundleDisplayName 
+
+ex file Arabic : 
+"CFBundleName" = "البوم الصور";
+"CFBundleDisplayName" = "البوم الصور";
+
+ex file English :
+"CFBundleName" = "Galary App";
+"CFBundleDisplayName" = "Galary App";
+
+- different CFBundleName & CFBundleDisplayName 
+CFBundleDisplayName : below icon and background app should name support language
+
+CFBundleName : recommended max 16 characters, show menu setting in xCode
+
+
+
+-----------------------------------------------------------------------------------
+- how add capacity  emulator 
+
+1- open android studio 
+2- choose virtual device Manager
+3- create emulator 
+4- choose advanced setting 
+5- internal storage :
+  - change MB to GB 
+  - write 5 
+  - click button  ok
+
+-------------------------------------------------------------------------------------
+error : app:processDebugResources
+
+fix :
+1- check release install android 
+   - SDK Manager -> SDK Platform (no install any api)
+
+2- virtual device Manager
+   - choose version same install in SDK Platform

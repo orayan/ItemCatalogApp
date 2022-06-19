@@ -10,7 +10,8 @@ class MyItemCatalogApp extends StatelessWidget {
         designSize: const Size(360, 690),
         builder: (context, child) {
           return MaterialApp(
-            title: AppLangKey.appName,
+            // * title
+            onGenerateTitle: (context) => AppLangKey.appName.tr(),
             debugShowCheckedModeBanner: false,
             // * lang
             localizationsDelegates: context.localizationDelegates,
